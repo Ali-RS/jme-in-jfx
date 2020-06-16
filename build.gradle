@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+}
+
+javafx {
+    version = '14.0.1'
+    modules = [
+            'javafx.base',
+            'javafx.controls',
+            'javafx.fxml',
+            'javafx.graphics',
+            'javafx.swing'
+    ]
+}
+
+group 'com.myapplication'
+version '1.0.0'
+
+mainClassName = "com.myapp.Main"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+    implementation "org.jmonkeyengine:jme3-core:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-desktop:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-lwjgl3:3.3.2-stable"
+
+    implementation 'com.jayfella:jfx-11-jme-embedded:1.0.0'
+
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
