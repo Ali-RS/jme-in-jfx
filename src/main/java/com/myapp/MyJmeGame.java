@@ -1,5 +1,6 @@
 package com.myapp;
 
+import com.jayfella.jfx.embedded.SimpleJfxApplication;
 import com.jme3.app.state.AppState;
 import com.jme3.light.DirectionalLight;
 import com.jme3.material.Material;

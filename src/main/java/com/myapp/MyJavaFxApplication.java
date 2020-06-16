@@ -1,5 +1,6 @@
 package com.myapp;
 
+import com.jayfella.jfx.embedded.SimpleJfxApplication;
 import com.jme3.app.FlyCamAppState;
 import com.jme3.app.StatsAppState;
 import com.jme3.audio.AudioListenerState;
